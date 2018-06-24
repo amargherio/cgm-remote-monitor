@@ -5,8 +5,8 @@ manual_scaling:
   instances: 1
 
 resources:
-  cpu: 1
-  memory_gb: 1
+  cpu: 0.5
+  memory_gb: 0.5
   disk_size_gb: 10
 
 network:
@@ -18,3 +18,4 @@ env_variables:
   mongo: mongodb://nightscout-user:2L5VmAOU8z$7Wfj^vbNYeTEjJ@ds263089.mlab.com:63089/nightscout-amargherio
   mongo_collection: entries
   ENABLE: careportal iob cob sage boluscalc
+  DEVICESTATUS_ADVANCED: True
