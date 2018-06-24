@@ -1,0 +1,20 @@
+runtime: nodejs
+env: flex
+
+manual_scaling:
+  instances: 1
+
+resources:
+  cpu: 1
+  memory_gb: 1
+  disk_size_gb: 10
+
+network:
+  forwarded_ports:
+    - 80:1337/tcp
+
+env_variables:
+  API_SECRET: xpG3Fj7lxZs2shudDnekRu
+  mongo: mongodb://nightscout-user:2L5VmAOU8z$7Wfj^vbNYeTEjJ@ds263089.mlab.com:63089/nightscout-amargherio
+  mongo_collection: entries
+  ENABLE: careportal iob cob sage boluscalc
