@@ -15,7 +15,7 @@ network:
 
 env_variables:
   API_SECRET: xpG3Fj7lxZs2shudDnekRu
-  mongo: mongodb://nightscout-user:2L5VmAOU8z$7Wfj^vbNYeTEjJ@ds263089.mlab.com:63089/nightscout-amargherio
+  mongo: "mongodb://nightscout:vXRt5kb34Hva8yz7q3TA@ds263089.mlab.com:63089/nightscout-amargherio"
   mongo_collection: entries
-  ENABLE: careportal iob cob sage boluscalc
+  ENABLE: careportal iob cob sage boluscalc delta cors
   DEVICESTATUS_ADVANCED: True
